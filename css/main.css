@@ -44,6 +44,11 @@ table {
 body {
 	background: #e6e9ed;
 }
+.clear:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
 .button {
 	background: #319bd5;
 	padding: 15px;
@@ -136,8 +141,9 @@ body {
 		display: none;
 	}
 }
-.main {
-	margin-top: 30px;
+.wrap {
+	padding-top: 30px;
+	display:table-cell;
 }
 
 .menu > li {
@@ -166,6 +172,187 @@ body {
 
 .menu .menu-root li {
 	border-top: dashed 1px #dde2e4;
-	background: #319bd5; 	
+	background: #319bd5; 
 }
 
+.arrow {
+	background: url(images/Arrow-.png) no-repeat;
+	height: 8px;
+	width: 5px;
+	padding-right: 15px;
+}
+
+.ruler {
+	background: url(images/ruler%5B1%5D.png) no-repeat center;
+	height: 26px;
+	width: 26px;
+}
+
+.calc {
+	background: url(images/%D0%A1%D0%BB%D0%BE%D0%B9-4.png) no-repeat center;
+	height: 23px;
+	width: 18px;
+}
+
+.viber {
+	background: url(images/viber-24%5B1%5D.png) no-repeat center;
+	height: 24px;
+	width: 24px;
+}
+
+
+.whatsapp {
+	background: url(images/whatsup-24%5B1%5D.png) no-repeat center;
+	height: 24px;
+	width: 23px;
+}
+
+.favorites {
+	background: url(images/star.png) no-repeat center;
+	height: 14px;
+	width: 16px;
+}
+
+.mail {
+	background: url(images/mail.png) no-repeat center;
+	height: 14px;
+	width: 16px;
+}
+
+.sitemap {
+	background: url(images/Sitemap.png) no-repeat center;
+	height: 14px;
+	width: 14px;
+}
+
+.top-menu a {
+	margin-right: 10px;
+	color: #656d78;
+	font: 400 16px / 20.3px GothamPro;
+}
+
+ .top-menu .pull-right a {
+	margin-right: 0px;
+	margin-left: 10px;
+}
+
+.small-icons {
+	margin-left: 15px;
+	float: right;
+}
+
+.f {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: bottom;	
+}
+
+
+
+.main {
+	margin-left: 30px;
+	height: 2000px;
+}
+
+.top-menu {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.slider {
+	margin-top: 30px;
+	background-color: #787878;
+	padding:  80px 60px;
+	box-shadow: 0px 0px 15px #888888;
+	border-bottom: 20px solid #f8df47;
+	position: relative;
+}
+.slider li {
+	padding: 0;
+margin: 0;
+width: 33.333333%;
+height: 100%;
+overflow: hidden;
+position: absolute;
+top: 0;
+bottom: 0;
+}
+
+.slider h1 {
+	color: #ffffff;
+	font: 300 44px / 24px GothamPro;
+}
+
+.slider p {
+	color: #ffffff;
+	font: 400 14px / 24px GothamPro;
+	padding: 30px 0;
+}
+
+.more {
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	line-height: 40px;
+	vertical-align: middle;
+	width: 150px;
+	height: 40px;
+	color: #ffffff;
+	background: #319bd5;
+	font: 400 16px / 18px GothamPro;
+	position: absolute;
+	left: 50px;
+	top: 70%;
+}
+
+.menu {
+	background: #fff;
+}
+
+.wrap-tr {
+	display:table-row;
+}
+
+.left-block {
+	display:table-cell;
+	background: #fff;
+	width: 25%;
+	box-shadow: 0px 0px 15px #888888;
+	border-bottom: 20px solid #f8df47;
+}
+
+
+.arrows {
+	background: #319bd5;
+	color: #decb41;
+	padding: 20px 15px;
+	width: 30px;
+	height: 50px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.slider-prev {
+	background: #319bd5;
+	text-align: center;
+	line-height: 40px;
+	color: #decb41;
+	width: 30px;
+	height: 40px;
+	position: absolute;
+	left: 0px;
+	top: 70%;
+}
+
+.slider-next {
+	background: #319bd5;
+	text-align: center;
+	vertical-align: center;
+	line-height: 40px;
+	color: #decb41;
+	width: 30px;
+	height: 40px;
+	position: absolute;
+	right: 0px;
+	top: 70%;
+}
